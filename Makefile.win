@@ -1,0 +1,44 @@
+# Project: Proyecto 1
+# Makefile created by Dev-C++ 4.9.9.1
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = principal.o helpers.o drawings.o menus.o baraja.o game.o $(RES)
+LINKOBJ  = principal.o helpers.o drawings.o menus.o baraja.o game.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" -lconio  
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/include/c++/3.3.1"  -I"C:/Dev-Cpp/include/c++/3.3.1/mingw32"  -I"C:/Dev-Cpp/include/c++/3.3.1/backward"  -I"C:/Dev-Cpp/lib/gcc-lib/mingw32/3.3.1/include"  -I"C:/Dev-Cpp/include" 
+BIN  = BlackJack.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS) -std=c99   
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before BlackJack.exe all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "BlackJack.exe" $(LIBS)
+
+principal.o: principal.c
+	$(CC) -c principal.c -o principal.o $(CFLAGS)
+
+helpers.o: helpers.c
+	$(CC) -c helpers.c -o helpers.o $(CFLAGS)
+
+drawings.o: drawings.c
+	$(CC) -c drawings.c -o drawings.o $(CFLAGS)
+
+menus.o: menus.c
+	$(CC) -c menus.c -o menus.o $(CFLAGS)
+
+baraja.o: baraja.c
+	$(CC) -c baraja.c -o baraja.o $(CFLAGS)
+
+game.o: game.c
+	$(CC) -c game.c -o game.o $(CFLAGS)

@@ -1,0 +1,22 @@
+En el menu principal podrás elegir que modalidad de juego quieras, individual o multijugador en la modalidad multijugador el juego debera ser de entre 2 y 7 jugadores.
+
+En el caso de la modalidad individual podrás elegir tu nombre de jugador y el dinero inicial. En el caso de la modalidad multijugador podrás elegir el número de jugadores y el dinero inicial (la cantidad introducida sera el dinero inicial para cada jugador).
+*En ambas modalidades el dinero inicial sera entre $10 y $15000.
+
+En el caso de la modalidad multijugador, cada jugador podrá elegir su nombre de jugador de manera individual. El orden en que se introduzcan los nombres será el orden de los turnos.
+
+En ambas modalidades se realizara una apuesta inicial minima de $10 y maxima del dinero todal que se tenga disponible. En pantalla aparecera la apuesta y el dinero disponible junto el nombre de jugador en el orden antes mencionado.
+
+Despues de que todos los jugadores hayan realizado su apuesta inicial se dará inicio a la primera ronda, despues de que la banca haya tomado su carta se dará la posibilidad de duplicar la apuesta (en caso de tener dinero suficiente). Despues se repartiran 2 cartas y el jugador podra pedir mas si asi lo desea.
+
+En caso de que el jugador se pase de 21 perderá automaticamente y se le retirara su apuesta y sus cartas.
+
+Despues de que cada jugador reciba las cartas que desea, iniciara la ronda de premiacion donde se tendran los siguientes paramentros de premiacion:
+
+*El jugador quedo mas cerca de 21 sin pasarse que la banca->se recibira 1:1 de la apuesta
+
+*El jugador obtuvo blackjack (21 con solo 2 cartas)->se recibira 3:2 de la apuesta
+
+*El jugador quedo mas lejos de 21 que la banca->se le retirará su apuesta
+
+Al finalizar la ronda de premiacion se podra iniciar otra ronda de juego (es necesario que minimo 1 jugador tenga dinero suficiente para realizar una apuesta inicial);
